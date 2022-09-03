@@ -1,0 +1,36 @@
+{
+    "resourceType": "Patient",
+    "name": [
+        {
+            "use": "official",
+            "given": [
+                "Test Patient"
+            ],
+            "family": "Test Family"
+        }
+    ],
+    "gender": "female",
+    "birthDate": "2000-02-13",
+    "telecom": [
+        {
+            "value": "901283493434",
+            "use": "mobile",
+            "system": "phone"
+        },
+        {
+            "value": "test@test.de",
+            "use": "home",
+            "system": "email"
+        }
+    ],
+    "address": [
+        {
+            "line": [
+                "123, Berlin Berlin"
+            ],
+            "city": "Berlin",
+            "state": "Berlin",
+            "postalCode": "123"
+        }
+    ]
+}
