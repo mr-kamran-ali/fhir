@@ -6,7 +6,6 @@ from django.http import HttpResponse, Http404
 import shutil
 from os import listdir
 from os.path import isfile, join
-from django.views.generic.base import TemplateView
 
 def home(request):
     if request.method == 'POST':
@@ -29,15 +28,8 @@ def home(request):
         cmd_mkdir = ["mkdir","-p",dir_name]
         subprocess.run(cmd_mkdir)
 
-
-        "java -jar validator_cli.jar -compare -dest ig_comparison -version 4.0"
-        "-ig \"smart4health.eu.core\#0.5.2\""
-        "-ig https://build.fhir.org/ig/hl7-eu/x-ehealth"
-        "-left http://fhir.smart4health.eu/StructureDefinition/s4h-observation-base"
-        "-right http://hl7.eu/fhir/ig/xeh/StructureDefinition/Observation-diagnosis-eu-xeh"
-
         cmd_compare = ["java", "-jar", "validator_cli.jar", "-dest", dir_name, "-version", "4.0", "-ig", ig1, "-ig", ig2, "-left", pr1, "-right", pr2 ]
-        #subprocess.run(cmd_compare)
+        subprocess.run(cmd_compare)
 
         shutil.make_archive(base_name=file_name, format='zip', root_dir=media_path, base_dir=file_name)
 
