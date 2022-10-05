@@ -1,0 +1,9 @@
+Available Results:
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    {% for myfile in myfiles %}
+    <input type="checkbox" name={{ myfile }} value="{{ myfile }}"><br>
+    {% endfor %}
+    <button type="submit" class="btn btn-primary">Upload file</button>
+</form>
