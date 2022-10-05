@@ -1,3 +1,5 @@
 validator_cli.jar
 /media_cdn
 /static_cdn
+*.pyc
+**.pyc

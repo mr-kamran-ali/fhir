@@ -18,12 +18,14 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls import url, include
 from django.contrib import admin
-from compare.views import home
+from compare.views import home, results, download
 from django.conf.urls.static import static
 
 
 urlpatterns = [
     url(r'^$', home, name='home'),
+    url(r'^results/$', results, name='results'),
+    url(r'^download/$', download, name='download'),
     path('admin/', admin.site.urls),
 ]
 if settings.DEBUG:

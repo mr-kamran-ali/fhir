@@ -62,7 +62,6 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12 p-5 my-5">
-
                             <div class="px-4">
                                 <h2 class="font-weight-bold line-height-1 mb-2">Compare Profiles</h2>
                                 <p class="text-3 mb-4">Provide two IGs and two profiles from those IGs to compare</p>
@@ -110,9 +109,9 @@
                                     </div>
                                     <div class="row">
                                         <div class="form-group col">
-                                            <input type="submit" value="SUBMIT"
+                                            <input type="submit" value="Compare"
                                                 class="btn btn-primary btn-rounded font-weight-semibold px-5 btn-py-2 text-2"
-                                                data-loading-text="Loading...">
+                                                data-loading-text="Comparing...">
                                         </div>
                                     </div>
                                 </form>
@@ -124,7 +123,7 @@
                                 <p>Profiles can only be identified by their canonical URLs, make sure they exist in the
                                     IG.</p>
                                 <p>Comparison can take couple of minutes, please be patient.</p>
-                                <p>Results will be automatically downloaded in .zip file as soon as they are ready.</p>
+                                <p>After successful comparison, you'll be redirected to results page.</p>
                             </div>
                         </div>
                     </div>
@@ -148,16 +147,11 @@
 
     <!-- Vendor -->
     <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/jquery.appear/jquery.appear.min.js' %}"></script>
-    <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
-    <script src="{% static 'vendor/jquery.cookie/jquery.cookie.min.js' %}"></script>
     <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-    <script src="{% static 'vendor/jquery.validation/jquery.validate.min.js' %}"></script>
     <script src="{% static 'vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js' %}"></script>
     <script src="{% static 'vendor/jquery.gmap/jquery.gmap.min.js' %}"></script>
     <script src="{% static 'vendor/lazysizes/lazysizes.min.js' %}"></script>
     <script src="{% static 'vendor/isotope/jquery.isotope.min.js' %}"></script>
-    <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
     <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
     <script src="{% static 'vendor/vide/jquery.vide.min.js' %}"></script>
     <script src="{% static 'vendor/vivus/vivus.min.js' %}"></script>
@@ -172,10 +166,6 @@
 
     <!-- Theme Initialization Files -->
     <script src="{% static 'js/theme.init.js' %}"></script>
-
-    <!-- Examples -->
-    <script src="{% static 'js/examples/examples.portfolio.js' %}"></script>
-
 
 </body>
 
