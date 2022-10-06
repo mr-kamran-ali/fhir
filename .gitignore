@@ -1,5 +1,5 @@
 validator_cli.jar
-/media_cdn
+../ig_compare
 /static_cdn
 *.pyc
 **.pyc

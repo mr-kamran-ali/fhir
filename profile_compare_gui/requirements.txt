@@ -1,0 +1,11 @@
+asgiref==3.5.2
+bandit==1.7.4
+certifi @ file:///private/var/folders/sy/f16zz6x50xz3113nwtb9bvq00000gp/T/abs_05nm_gqf36/croots/recipe/certifi_1663615689491/work/certifi
+Django==4.1.2
+gitdb==4.0.9
+GitPython==3.1.27
+pbr==5.10.0
+PyYAML==6.0
+smmap==5.0.0
+sqlparse==0.4.3
+stevedore==4.0.0
